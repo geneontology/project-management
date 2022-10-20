@@ -1,2 +1,3 @@
-# project
-Tracking project metadata in the GO as issues.
+# project-metadata
+
+Using an issue tracker for controlling GO project metadata and project discussion.
