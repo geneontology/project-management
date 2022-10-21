@@ -11,7 +11,7 @@ assignees: ''
 https://github.com/orgs/geneontology/projects/TBD
 
 ##### Project description
-Ongoing support for GO software that is consumed by the Alliance. This includes web components and APIs that are used by web components and directly.
+Lorem ipsum
 
 ##### PI
 TBD
