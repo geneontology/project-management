@@ -2,7 +2,8 @@
 name: Proposed project
 about: This is a standard template for a proposed project in the GO.
 title: TBD
-labels: question, "Issue incomplete"
+labels: 
+  - 'Issue incomplete'
 assignees: 'pgaudet'
 
 ---
