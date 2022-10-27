@@ -3,7 +3,12 @@ name: Proposed project
 about: This is a standard template for a proposed project in the GO.
 title: TBD
 labels: 
-  - 'Issue incomplete'
+  - 'Needs PI'
+  - 'Needs PO'
+  - 'Needs TL'
+  - 'Needs tech doc'
+  - 'Needs PM approval'
+  - 'Needs LA approval'
 assignees: 'pgaudet'
 
 ---
