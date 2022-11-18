@@ -22,7 +22,7 @@ Lorem ipsum
 ##### PI
 TBD
 
-##### Project owner (PO)
+##### Product owner (PO)
 TBD
 
 ##### Technical lead (TL)
