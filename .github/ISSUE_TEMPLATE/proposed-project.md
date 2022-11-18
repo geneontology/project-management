@@ -32,7 +32,7 @@ TBD
 TBD
 
 ##### Technical specs
-TBD
+TBD (template: https://docs.google.com/document/d/111UqtS3G0aJZpAijZYI3Da0t94OQpGePlPJsqZE4Tio/edit)
 
 ##### Other comments
 N/A
