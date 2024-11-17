@@ -61,7 +61,7 @@ TBD
 
 TBD
 
-##### Fail state/Withdrawl
+##### Fail state/Withdrawal
 
 TBD
 
