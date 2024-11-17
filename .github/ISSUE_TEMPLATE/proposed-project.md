@@ -1,6 +1,6 @@
 ---
-name: Proposed project
-about: This is a standard template for a proposed project in the GO.
+name: Simple/technical proposed project
+about: This is a short template for a simple/technical proposed project in the GO.
 title: TBD
 labels: 
   - 'Needs PI'
