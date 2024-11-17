@@ -1,6 +1,6 @@
 ---
 name: Goal-oriented proposed project
-about: This is a GO project template that focuses on goals, motivations, and results.
+about: This is a newer GO project template that focuses on goals, motivations, and results.
 title: TBD
 labels: 
   - 'Needs PI'
