@@ -13,18 +13,18 @@ assignees: 'pgaudet'
 
 ---
 
-##### Project link
+#### Project link
 https://github.com/orgs/geneontology/projects/TBD
 
-##### Project description
+#### Project description
 
 Lorem ipsum
 
-##### Scope/Deliverables
+#### Scope/Deliverables
 
 TBD
 
-##### Motivations
+#### Motivations
 
 * Curators
 * Data consumers
@@ -32,46 +32,46 @@ TBD
 * Current grant aim
 * Positioning for next grant
 
-##### Coordination (with other resources)
+#### Coordination (with other resources)
 
 * List all impacted groups
 * Get a formal approval from groups before starting the project
 
-##### Tasks
+#### Tasks
 
 TBD
 
-##### Dependencies
+#### Dependencies
 
 TBD
 
-##### Cost/Resources
+#### Cost/Resources
 
 TBD
 
-##### Strengths/Opportunities
+#### Strengths/Opportunities
 
 TBD
 
-##### Weaknesses/Threats
+#### Weaknesses/Threats
 
 TBD
 
-##### Risks/Mitigations
+#### Risks/Mitigations
 
 TBD
 
-##### Fail state/Withdrawal
+#### Fail state/Withdrawal
 
 TBD
 
-##### Technical specs
+#### Technical specs
 
 TBD (template: https://docs.google.com/document/d/111UqtS3G0aJZpAijZYI3Da0t94OQpGePlPJsqZE4Tio/edit)
 
-##### Personnel
+#### Personnel
 
 TBD
 
-##### Other comments
+#### Other comments
 N/A
