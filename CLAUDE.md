@@ -98,6 +98,8 @@ The full lifecycle for creating a new project:
    ```
    Note the project number and URL from the output.
 
+   **Important:** The board should be a Kanban board with the default columns (Todo, In Progress, Done), unless otherwise specified. The `gh` CLI creates boards in table layout by default and the GitHub API does not support changing the view layout. **The user must manually switch the layout to "Board"** in the GitHub UI after creation: click the gear icon ("View options") next to the search bar, then select "Board" under the Layout section. Remind the user to do this.
+
 2. **Create the issue in this repo** using the template, with the project link filled in:
    ```bash
    gh issue create --repo geneontology/project-management \
