@@ -148,49 +148,6 @@ gh project item-list 108 --owner geneontology --limit 200 --format json | \
 2. Close the project-management issue
 3. Close the org project board if all work items are done
 
-## Alliance / AGR Yearly Progress Reporting
-
-This repository also hosts working drafts for the GO Consortium's yearly contribution to the **Alliance of Genome Resources** NIH progress report. The final artifact lives in Google Drive (owned by the Alliance); sweeping, drafting, and iteration happen here as `draft-go-section-<year>.md` files.
-
-### Context
-
-- The Alliance is a separate project from the GOC but pays for some GO software time; many PIs are shared.
-- GO contributions appear as one sub-section inside the report's "Specialists Team" section — alongside Textpresso, BLAST, JBrowse, AllianceMine, PAVI, DIOPT, DevOps, User Support, and others.
-- The GO sub-section is typically one paragraph (~200-300 words). Some working groups in prior years have run as short as two sentences.
-- Reporting window is roughly March→March each year.
-- Paul Sternberg's four content categories (asked each year): GO Pipelines, Annotation tools, GO-CAM visualizations, and plans for GO term pages (specifically the round-trip linkage to Alliance gene pages).
-- The NIH progress report is distinct from the Alliance's *Genetics* journal article (broader scope, different cadence) — do not conflate the two deliverables.
-
-### Drive references
-
-- 2025 report folder (completed): https://drive.google.com/drive/folders/14U9SYv3SCGHqp8agRVzcKTlPaSpvM7cr
-- 2026 working doc: https://docs.google.com/document/d/1u0-fylXiFINT5avst3_EaLqSzFzXi9Y-
-- Prior-year exemplars for idiom calibration: `Alliance Progress Report 2021.docx` / `2022.docx` (in Drive).
-
-Before drafting, read the prior year's actual final report to calibrate length and tone. Working drafts and specialist-group outline docs are not a substitute.
-
-### Audience and tone
-
-- **Zero-knowledge reader.** Assume NIH program officers and Alliance admins have no GO vocabulary. Every paragraph should land without relying on insider terms like Noctua, Minerva, AmiGO, or GO-CAM as givens.
-- **Narrative throughline.** Structure paragraphs to tell the story of where the year went, not to tick through Sternberg's four categories in order. The categories are *content anchors*, not a section layout.
-- **No version numbers, no PR numbers, no casual repo/tool names.** But DO name first-class sub-projects that have their own publications or product identity — e.g., `dragon-ai-agent` (own publication at PMC11484368), GO-CAM Browser. Naming these credits the sub-project and signals scope.
-- **Lean.** 3–4 short stories, not an exhaustive list.
-
-### Sweep approach
-
-- **Window**: roughly March 1 (prior year) through March 31 (current year).
-- **Primary sweep**: `geneontology` org PRs/issues in window, focused on software deliverables (`go-api`, `go-fastapi`, `go-site`, `amigo`, `noctua`, `noctua-py`, `minerva`, `gocam-py`, `pathways2GO`, `wc-gocam-viz`, `web-components`, `go-cam-browser`). **Skip routine ontology/data churn** in `go-ontology` and `noctua-models`; only flag infra or tooling changes there.
-- **Secondary sweep**: `alliance-genome` org — GO team members (kltm, dustine32, tmushayahama, sierra-moxon, cmungall, pgaudet, etc.) may have authored PRs into Alliance repos that constitute direct GO→Alliance contribution. A `geneontology`-only sweep will miss these.
-- **AI-authored ontology edits**: search `geneontology/go-ontology` PRs authored by the `dragon-ai-agent` bot account. External analysis lives under `monarch-initiative/dragon-ai-results`.
-- **Keep the detailed sweep inventory at the bottom of the draft** even when the polished paragraphs are short — it is reusable for the separate *Genetics* article and for internal reporting.
-
-### Working convention
-
-- Drafts live here as `draft-go-section-<year>.md` and are **gitignored** — they are transient local artifacts, not committed to the repo. The canonical version is in Drive.
-- Iterate in the local draft; a human mirrors stable changes into the Drive working doc.
-- **Writes to the Alliance Drive docs must be done manually by a human.** Claude and other automation tools are not authorized to edit, create, or otherwise modify the Alliance-owned Drive documents (yet) — even if the Drive MCP exposes write tools in the session. This applies to the working doc, the final GO sub-section doc, and anything else in the Alliance report folders. Read access is fine.
-- At the end of each round, cross-check the local draft against the live Drive version — Alliance editors may make in-place changes that do not flow back (e.g., the 2026 Drive doc gained a Cloudflare point that was edited in directly).
-
 ## GitHub CLI Setup and Permissions
 
 The `gh` CLI is the primary tool for both users and Claude to interact with this system. All operations described in this document have been tested and verified to work.
@@ -330,3 +287,46 @@ These observations help maintain awareness without requiring immediate action on
 - The link between issues and project boards is manual (URLs in text), not a native GitHub metadata association
 - When generating reports, always query project 108 for the authoritative lifecycle status
 - Issue labels track approval state; project 108 Status tracks lifecycle state — these are complementary
+
+## Alliance / AGR Yearly Progress Reporting
+
+This repository also hosts working drafts for the GO Consortium's yearly contribution to the **Alliance of Genome Resources** NIH progress report. The final artifact lives in Google Drive (owned by the Alliance); sweeping, drafting, and iteration happen here as `draft-go-section-<year>.md` files.
+
+### Context
+
+- The Alliance is a separate project from the GOC but pays for some GO software time; many PIs are shared.
+- GO contributions appear as one sub-section inside the report's "Specialists Team" section — alongside Textpresso, BLAST, JBrowse, AllianceMine, PAVI, DIOPT, DevOps, User Support, and others.
+- The GO sub-section is typically one paragraph (~200-300 words). Some working groups in prior years have run as short as two sentences.
+- Reporting window is roughly March→March each year.
+- Paul Sternberg's four content categories (asked each year): GO Pipelines, Annotation tools, GO-CAM visualizations, and plans for GO term pages (specifically the round-trip linkage to Alliance gene pages).
+- The NIH progress report is distinct from the Alliance's *Genetics* journal article (broader scope, different cadence) — do not conflate the two deliverables.
+
+### Drive references
+
+- 2025 report folder (completed): https://drive.google.com/drive/folders/14U9SYv3SCGHqp8agRVzcKTlPaSpvM7cr
+- 2026 working doc: https://docs.google.com/document/d/1u0-fylXiFINT5avst3_EaLqSzFzXi9Y-
+- Prior-year exemplars for idiom calibration: `Alliance Progress Report 2021.docx` / `2022.docx` (in Drive).
+
+Before drafting, read the prior year's actual final report to calibrate length and tone. Working drafts and specialist-group outline docs are not a substitute.
+
+### Audience and tone
+
+- **Zero-knowledge reader.** Assume NIH program officers and Alliance admins have no GO vocabulary. Every paragraph should land without relying on insider terms like Noctua, Minerva, AmiGO, or GO-CAM as givens.
+- **Narrative throughline.** Structure paragraphs to tell the story of where the year went, not to tick through Sternberg's four categories in order. The categories are *content anchors*, not a section layout.
+- **No version numbers, no PR numbers, no casual repo/tool names.** But DO name first-class sub-projects that have their own publications or product identity — e.g., `dragon-ai-agent` (own publication at PMC11484368), GO-CAM Browser. Naming these credits the sub-project and signals scope.
+- **Lean.** 3–4 short stories, not an exhaustive list.
+
+### Sweep approach
+
+- **Window**: roughly March 1 (prior year) through March 31 (current year).
+- **Primary sweep**: `geneontology` org PRs/issues in window, focused on software deliverables (`go-api`, `go-fastapi`, `go-site`, `amigo`, `noctua`, `noctua-py`, `minerva`, `gocam-py`, `pathways2GO`, `wc-gocam-viz`, `web-components`, `go-cam-browser`). **Skip routine ontology/data churn** in `go-ontology` and `noctua-models`; only flag infra or tooling changes there.
+- **Secondary sweep**: `alliance-genome` org — GO team members (kltm, dustine32, tmushayahama, sierra-moxon, cmungall, pgaudet, etc.) may have authored PRs into Alliance repos that constitute direct GO→Alliance contribution. A `geneontology`-only sweep will miss these.
+- **AI-authored ontology edits**: search `geneontology/go-ontology` PRs authored by the `dragon-ai-agent` bot account. External analysis lives under `monarch-initiative/dragon-ai-results`.
+- **Keep the detailed sweep inventory at the bottom of the draft** even when the polished paragraphs are short — it is reusable for the separate *Genetics* article and for internal reporting.
+
+### Working convention
+
+- Drafts live here as `draft-go-section-<year>.md` and are **gitignored** — they are transient local artifacts, not committed to the repo. The canonical version is in Drive.
+- Iterate in the local draft; a human mirrors stable changes into the Drive working doc.
+- **Writes to the Alliance Drive docs must be done manually by a human.** Claude and other automation tools are not authorized to edit, create, or otherwise modify the Alliance-owned Drive documents (yet) — even if the Drive MCP exposes write tools in the session. This applies to the working doc, the final GO sub-section doc, and anything else in the Alliance report folders. Read access is fine.
+- At the end of each round, cross-check the local draft against the live Drive version — Alliance editors may make in-place changes that do not flow back (e.g., the 2026 Drive doc gained a Cloudflare point that was edited in directly).
