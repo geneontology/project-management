@@ -186,7 +186,7 @@ Before drafting, read the prior year's actual final report to calibrate length a
 
 ### Working convention
 
-- Drafts live here as `draft-go-section-<year>.md`.
+- Drafts live here as `draft-go-section-<year>.md` and are **gitignored** — they are transient local artifacts, not committed to the repo. The canonical version is in Drive.
 - Iterate in the local draft; a human mirrors stable changes into the Drive working doc.
 - **Writes to the Alliance Drive docs must be done manually by a human.** Claude and other automation tools are not authorized to edit, create, or otherwise modify the Alliance-owned Drive documents (yet) — even if the Drive MCP exposes write tools in the session. This applies to the working doc, the final GO sub-section doc, and anything else in the Alliance report folders. Read access is fine.
 - At the end of each round, cross-check the local draft against the live Drive version — Alliance editors may make in-place changes that do not flow back (e.g., the 2026 Drive doc gained a Cloudflare point that was edited in directly).
