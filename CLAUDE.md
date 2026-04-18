@@ -262,13 +262,14 @@ These are the ideals we strive for. Not every project or item will meet all of t
 
 - **Every PR in any geneontology repo should be tied to a ticket (issue)**. Orphan PRs — those not linked to any issue — represent untracked work.
 - **Every ticket (issue) that represents project work should belong to a project board**. Issues floating outside of any project board are invisible to project tracking.
+- **An issue should belong to only one project board at a time.** Cross-tracking the same issue on multiple boards makes "where is this work being managed?" ambiguous and creates status drift between the copies. When a ticket's scope moves from one project to another (for example, a sub-project spun off from a parent), move it — do not duplicate it.
 - **Every project board item should have a Status set**. Items without status are ambiguous and hard to report on.
 
 ### Lifecycle Hygiene
 
 - **Every item in project 108 should have a current, accurate Status**. Stale statuses (e.g., "Active" on a project with no recent activity) obscure the true state of the portfolio.
 - **Completed projects should be closed**: the project-management issue should be closed, the project 108 status should reflect the completion year, and ideally the org project board should be closed if all work items are done.
-- **Approval labels should reflect reality**: a project-management issue should not carry "Needs..." labels for approvals that have already been obtained, nor should it have the "Ready" label if approvals are still pending.
+- **Approval labels should reflect reality**: a project-management issue should not carry "Needs..." labels for approvals that have already been obtained, nor should it have the "Ready" label if approvals are still pending. For a sub-project whose scope is already approved via its parent's charter, it is acceptable to start at `Ready` rather than re-routing the same approvals — reflect reality rather than follow the default procedure when reality has moved ahead of it.
 
 ### Reporting Guidance
 
