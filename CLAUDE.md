@@ -248,6 +248,27 @@ gh api graphql -f query='{
 - **pgaudet** (Pascale Gaudet) — Default assignee for all project proposals, project manager
 - **kltm** (Seth Carbon) — Lead architect, frequent project author
 
+## Communication Channels
+
+Where consortium discussion, announcements, and helpdesk traffic live. Useful when drafting outreach or researching prior discussion.
+
+**Mailing lists (Stanford Mailman):**
+
+- **go-friends** — broad consortium + interested-party list. Listinfo: https://mailman.stanford.edu/mailman/listinfo/go-friends. Public archive (Jan 2000 → present): https://mailman.stanford.edu/pipermail/go-friends/ — reachable via WebFetch.
+- **go-consortium** — narrower consortium-internal list. Address: `go-consortium@list.stanford.edu` (`list.stanford.edu` is the SMTP alias; the list itself lives on `mailman.stanford.edu`). Public archive: https://mailman.stanford.edu/pipermail/go-consortium/.
+
+**Helpdesk — two independent surfaces, *not* mirrors of each other:**
+
+- **`geneontology/helpdesk` repo Discussions** — https://github.com/geneontology/helpdesk/discussions. The primary public record of helpdesk activity; consortium members default to this surface. Reachable via `gh api repos/geneontology/helpdesk/discussions`. Email threads sometimes get manually ported here for public discussion.
+- **help@geneontology.org / helpdesk@geneontology.org** (same destination, two aliases) — private email channel routed through runbox.com (SMTP) and handled as a groups.io group landing in core GO team inboxes. External users tend to use this. Not reachable via CLI; would require Gmail or groups.io member access.
+- **help.geneontology.org** — landing-page subdomain the GO team keeps current with "where to go for help"; treat the live page as authoritative for current routing.
+
+Stated preference: consortium uses the **repo**; external users still naturally reach for email.
+
+**Announcements:**
+
+- **`geneontology/go-technical-announcements` repo** — https://github.com/geneontology/go-technical-announcements. The formal log of technical announcements (data updates, deprecations, pipeline changes). Issues are typically cross-posted to one or more mailing lists when sent. Reachable via `gh`.
+
 ## Cleanliness Criteria
 
 These are the ideals we strive for. Not every project or item will meet all of them at all times, but deviations should be noted in reports and audits — quietly, as observations, not alarms.
