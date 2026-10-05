@@ -1,15 +1,10 @@
 ---
 name: Goal-oriented proposed project
-about: This is a newer GO project template that focuses on goals, motivations, and results.
+about: This is a newer GO project template that focuses on goals, motivations, and
+  results.
 title: TBD
-labels: 
-  - 'Needs PI'
-  - 'Needs PO'
-  - 'Needs TL'
-  - 'Needs tech doc'
-  - 'Needs PM approval'
-  - 'Needs LA approval'
-assignees: 'pgaudet'
+labels: Needs LA approval, Needs PM approval, Needs PO
+assignees: pgaudet
 
 ---
 
